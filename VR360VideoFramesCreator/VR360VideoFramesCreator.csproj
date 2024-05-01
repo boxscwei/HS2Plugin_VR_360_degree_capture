@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1DE5348D-BD16-425D-9BB5-D5F23A0FC02A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VR360VideoFramesCreator</RootNamespace>
+    <AssemblyName>VR360VideoFramesCreator</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;HS2</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>HS2</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>FingerPrintForBoxscWei.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="IL">
+      <HintPath>..\IL.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>..\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>..\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>..\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Lazy.cs" />
+    <Compile Include="Metadata.cs" />
+    <Compile Include="Pngcs\Chunks\ChunkCopyBehaviour.cs" />
+    <Compile Include="Pngcs\Chunks\ChunkHelper.cs" />
+    <Compile Include="Pngcs\Chunks\ChunkLoadBehaviour.cs" />
+    <Compile Include="Pngcs\Chunks\ChunkPredicate.cs" />
+    <Compile Include="Pngcs\Chunks\ChunkPredicateEquiv.cs" />
+    <Compile Include="Pngcs\Chunks\ChunkPredicateId.cs" />
+    <Compile Include="Pngcs\Chunks\ChunkPredicateId2.cs" />
+    <Compile Include="Pngcs\Chunks\ChunkRaw.cs" />
+    <Compile Include="Pngcs\Chunks\ChunksList.cs" />
+    <Compile Include="Pngcs\Chunks\ChunksListForWrite.cs" />
+    <Compile Include="Pngcs\Chunks\PngChunk.cs" />
+    <Compile Include="Pngcs\Chunks\PngChunkIDAT.cs" />
+    <Compile Include="Pngcs\Chunks\PngChunkIEND.cs" />
+    <Compile Include="Pngcs\Chunks\PngChunkIHDR.cs" />
+    <Compile Include="Pngcs\Chunks\PngChunkMultiple.cs" />
+    <Compile Include="Pngcs\Chunks\PngChunkSingle.cs" />
+    <Compile Include="Pngcs\Chunks\PngMetadata.cs" />
+    <Compile Include="Pngcs\FileHelper.cs" />
+    <Compile Include="Pngcs\FilterType.cs" />
+    <Compile Include="Pngcs\FilterWriteStrategy.cs" />
+    <Compile Include="Pngcs\ImageInfo.cs" />
+    <Compile Include="Pngcs\ImageLine.cs" />
+    <Compile Include="Pngcs\ImageLineHelper.cs" />
+    <Compile Include="Pngcs\ImageLines.cs" />
+    <Compile Include="Pngcs\PngCsUtils.cs" />
+    <Compile Include="Pngcs\PngHelperInternal.cs" />
+    <Compile Include="Pngcs\PngIDatChunkOutputStream.cs" />
+    <Compile Include="Pngcs\PngjException.cs" />
+    <Compile Include="Pngcs\PngjExceptionInternal.cs" />
+    <Compile Include="Pngcs\PngjOutputException.cs" />
+    <Compile Include="Pngcs\PngjUnsupportedException.cs" />
+    <Compile Include="Pngcs\PngWriter.cs" />
+    <Compile Include="Pngcs\ProgressiveOutputStream.cs" />
+    <Compile Include="Pngcs\Unity\Unity.cs" />
+    <Compile Include="Pngcs\Zlib\Adler32.cs" />
+    <Compile Include="Pngcs\Zlib\AZlibInputStream.cs" />
+    <Compile Include="Pngcs\Zlib\AZlibOutputStream.cs" />
+    <Compile Include="Pngcs\Zlib\CRC32.cs" />
+    <Compile Include="Pngcs\Zlib\DeflateCompressLevel.cs" />
+    <Compile Include="Pngcs\Zlib\EDeflateCompressStrategy.cs" />
+    <Compile Include="Pngcs\Zlib\ZlibInputStreamIs.cs" />
+    <Compile Include="Pngcs\Zlib\ZlibInputStreamMs.cs" />
+    <Compile Include="Pngcs\Zlib\ZlibOutputStreamIs.cs" />
+    <Compile Include="Pngcs\Zlib\ZlibOutputStreamMs.cs" />
+    <Compile Include="Pngcs\Zlib\ZlibStreamFactory.cs" />
+    <Compile Include="ResourceUtils.cs" />
+    <Compile Include="VR360VideoFramesCreator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WeakKeyDictionary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FingePrintForBoxscProject.pfx" />
+    <None Include="FingerPrintForBoxscWei.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
