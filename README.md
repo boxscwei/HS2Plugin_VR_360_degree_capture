@@ -8,3 +8,8 @@ By the VideoExport function provided by HSPlugins[https://github.com/IllusionMod
 This repo is focused on 360-degree panoramic pictures capturing.
 
 
+If you only want to capture 360-degree panoramic pictures, you only need to use VR360VideoFramesCreator.dll. 
+If you need to automatically capture video frames, you'll need to deploy VideoExport.dll as well. 
+Please use the rewritte code version to rebuild the "VideoExport" project provided by HSPlugins.
+
+
