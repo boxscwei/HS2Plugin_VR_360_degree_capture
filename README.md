@@ -14,7 +14,6 @@ Please use the rewritte code version to rebuild the "VideoExport" project provid
 
 ![snapshot1](https://github.com/boxscwei/HS2Plugin_VR_360_degree_capture/blob/main/Using_1.png)
 
-![snapshot2](https://github.com/boxscwei/HS2Plugin_VR_360_degree_capture/blob/main/Using_2.png)
-
+![snapshot2](https://github.com/boxscwei/HS2Plugin_VR_360_degree_capture/blob/main/using_2.png).
 
 
