@@ -12,8 +12,8 @@ If you only want to capture 360-degree panoramic pictures, you only need to use 
 If you need to automatically capture video frames, you'll need to deploy VideoExport.dll as well. 
 Please use the rewritte code version to rebuild the "VideoExport" project provided by HSPlugins.
 
-![snapshot1](https://github.com/boxscwei/HS2Plugin_VR_360_degree_capture/blob/main/Using_1.png)
+![snapshot1](Using_1.png)
 
-![snapshot2](https://github.com/boxscwei/HS2Plugin_VR_360_degree_capture/blob/main/using_2.png).
+![snapshot2](using_2.png).
 
 
