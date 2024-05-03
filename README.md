@@ -14,7 +14,9 @@ If you need to automatically capture video frames, you'll need to deploy VideoEx
 Please use the rewritte code version to rebuild the "VideoExport" project provided by HSPlugins.
 
 As long as you start the studio, you should have the plugin config UI like these:
-![snapshot1](Using_1.png)
+
+![snapshot1](https://github.com/boxscwei/HS2Plugin_VR_360_degree_capture/assets/101355585/b53c58d2-3dd1-46be-bc06-382278e79920)
+
 
 ![snapshot2](using_2.png).
 
