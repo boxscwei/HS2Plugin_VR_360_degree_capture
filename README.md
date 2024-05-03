@@ -7,7 +7,7 @@ Start the Studio normally before copy the release files into BepInEx\Plugins. Pr
 By the VideoExport function provided by [HSPlugins](https://github.com/IllusionMods/HSPlugins), It's possible to capture 360-degree panoramic pictures continually. However slightly modification of the source code of HSPlugins-r2.4\VideoExport.Core\VideoExport.cs is necessary. The modification version of the source-code of VideoExport.cs is attach in this repo.
 
 This repo is focused on 360-degree panoramic pictures capturing.
-** This plugin is focused on Honey Select 2. It should work in Honey Select, but I didn't test it.
+** This plugin was focused on Honey Select 2. It should work in Honey Select, but I didn't test it.
 
 If you only want to capture 360-degree panoramic pictures, you only need to use VR360VideoFramesCreator.dll. 
 If you need to automatically capture video frames, you'll need to deploy VideoExport.dll as well. 
