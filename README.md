@@ -18,7 +18,10 @@ As long as you start the studio, you should have the plugin config UI like these
 
 ![snapshot2](using_2.png).
 
-With the VR video frames you captured, you could generate the MMD video in the studio by using some video making tools.
+With the VR video frames you captured, you could generate the MMD video in the HS2 studio by using some video making tools.
 FFmpeg is a good choice by the way.
-<iframe height=498 width=510 src='https://share.utovr.com/151312095032.html' frameborder=0 allowfullscreen></iframe>
+
+[Sample_Video](https://share.utovr.com/151312095032.html)
+
+
 
