@@ -25,5 +25,6 @@ FFmpeg is a good choice by the way.
 
 [Sample_Video](https://share.utovr.com/151312095032.html)
 
+Tags: HS2 Studio VR video screenshot
 
 
